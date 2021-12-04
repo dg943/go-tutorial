@@ -1,0 +1,17 @@
+Introduction:-
+--------------
+Go was build to increase productivity by enabling rapid prototyping, decreasing compile and build time, and enabling better dependency management.
+
+Go provides net/http package, which is sufficient for creating http clients and servers. We will be learning about:-
+1. creation of http servers
+2. creation of tcp servers
+
+steps:
+1. First we will be creating simple http and tcp servers
+2. Then we will be adding authentication, optimizing the server response, defining multiple routes, and logging the http request
+
+Concepts and keywords:
+1. Go handlers
+2. goroutines
+3. Gorilla = A web toolkit for go
+
