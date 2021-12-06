@@ -1,0 +1,29 @@
+Templates allows us to define placeholders for dynamic content that can be replaced by the values at runtime 
+by a template engine. They can then be transformed into an html file and sent to the client. Creating html Templates
+in go is fairly easy using Go's "html/template" package.
+
+
+1. Creating your first template
+2. Serving static files over HTTP
+3. Serving static files over HTTP using gorilla mux
+4. Creating your first HTML form
+5. Reading your first HTML form
+6. Validating your first HTML form
+7. Uploading your first file
+
+
+Quite often, we would like to create html forms to get the information from the client in specified format, 
+upload files or folders to the servers, and generate generic HTML templates, rather then repeating the same static text.
+
+We will be learning how to create a basic template, and then move to serve static files, such as .js, .css, and images
+from a filesystem, and eventually create, read, and validate  HTML forms and upload a file to server.
+
+
+While designing web applications it is always a good practice to serve, the static files like .js, .css and images
+from the file system or any content delivery network (CDN), such as Akamai or Amazon CloudFront, rather then Serving
+it from the web server.
+This is because all these types of files are static and do not need to be processed, so why should we put extra load
+on server. Moreover, it helps us to boost the application performance, as all the requests for the static files will
+be served from external sources and therefore reduce the load on the server.
+
+Go's "net/http" package is sufficient enough for serving static resources from the filesystem through "FileServer".

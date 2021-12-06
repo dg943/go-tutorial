@@ -2,3 +2,4 @@ hello_test.go
 hello.go
 resource.txt
 .vscode
+.testing
